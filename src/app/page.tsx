@@ -1,3 +1,53 @@
-export default function Page() {
-  return <h1>Hello, Next.js!</h1>;
+import Card from "@/components/Card";
+import { Work } from "@/models/Work";
+import Image from "next/image";
+
+export default async function Page() {
+  // Without parentheses, any code on the lines after return will be ignored!
+
+  const res = await fetch("http://127.0.0.1:3000/json/RankingWorkList.json");
+  const data = await res.json();
+  const workList: Work[] = data.data.workList;
+  const recommendableWorks = workList.filter(
+    (work) => work.workInfo.favoriteCount > 50000
+  );
+
+  const listItems = recommendableWorks.map((work: Work) => (
+    <li key={`list_${work.workId}`}>
+      <Image
+        src={work.workInfo.mainKeyVisualPath}
+        alt={work.workInfo.mainKeyVisualAlt}
+        width={640 / 2}
+        height={360 / 2}
+      />
+      <p>{work.workInfo.workTitle}</p>
+    </li>
+  ));
+
+  return (
+    <>
+      <div
+        style={{
+          marginTop: "20px",
+          marginLeft: "20px",
+          marginRight: "20px",
+        }}
+      >
+        <h1>デイリーアニメランキング: 最も人気のアニメ</h1>
+
+        <div
+          style={{
+            display: "grid",
+            gridTemplateColumns: "repeat(3, 1fr)",
+            gap: "10px",
+            gridAutoRows: "minmax(100px, auto)",
+          }}
+        >
+          {recommendableWorks.map((work: Work) => (
+            <Card key={`list_${work.workId}`} work={work} />
+          ))}
+        </div>
+      </div>
+    </>
+  );
 }

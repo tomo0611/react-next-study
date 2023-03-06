@@ -1,0 +1,346 @@
+{
+  "resultCd": "00",
+  "version": "1.5",
+  "selfLink": "https://animestore.docomo.ne.jp/animestore/rest/WS000103?rankingType=01&needScene=1&mainSceneSize=6&length=20&mainKeyVisualSize=1&vodTypeList=svod_tvod&_=1678093477106",
+  "data": {
+    "maxCount": 5315,
+    "count": 6,
+    "workList": [
+      {
+        "workId": "26057",
+        "workInfo": {
+          "workTitle": "転生王女と天才令嬢の魔法革命",
+          "link": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=26057",
+          "mainKeyVisualPath": "https://cs1.animestore.docomo.ne.jp/anime_kv/img/26/05/7/26057_1_1.png?1671003318398",
+          "mainKeyVisualAlt": "転生王女と天才令嬢の魔法革命_1",
+          "scenes": [
+            {
+              "link": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=26057&partId=26057001",
+              "mainScenePath": "https://cs1.animestore.docomo.ne.jp/anime_kv/img/26/05/7/0/01/26057001_1_6.png?1672120888912",
+              "mainSceneAlt": "王女と令嬢の魔法革命_6"
+            },
+            {
+              "link": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=26057&partId=26057002",
+              "mainScenePath": "https://cs1.animestore.docomo.ne.jp/anime_kv/img/26/05/7/0/02/26057002_1_6.png?1673580606816",
+              "mainSceneAlt": "趣味と実益の助手獲得_6"
+            }
+          ],
+          "workIcons": [],
+          "myListCount": 53179,
+          "favoriteCount": 112751,
+          "workTypeList": ["anime"],
+          "vodType": "svod",
+          "ageLimitType": "0",
+          "workIconInfoList": [
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "1",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0"
+          ]
+        },
+        "seriesInfo": null,
+        "userInfo": {
+          "memberFlags": ["viewed"]
+        },
+        "rankingInfo": {
+          "rank": 4,
+          "arrowIcon": "rankUp"
+        }
+      },
+      {
+        "workId": "25810",
+        "workInfo": {
+          "workTitle": "僕のヒーローアカデミア（第6期）",
+          "link": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=25810",
+          "mainKeyVisualPath": "https://cs1.animestore.docomo.ne.jp/anime_kv/img/25/81/0/25810_1_1.png?1662697837051",
+          "mainKeyVisualAlt": "僕のヒーローアカデミア（第6期）_1",
+          "scenes": [
+            {
+              "link": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=25810&partId=25810001",
+              "mainScenePath": "https://cs1.animestore.docomo.ne.jp/anime_kv/img/25/81/0/0/01/25810001_1_6.png?1664953292806",
+              "mainSceneAlt": "静かな始まり_6"
+            },
+            {
+              "link": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=25810&partId=25810002",
+              "mainScenePath": "https://cs1.animestore.docomo.ne.jp/anime_kv/img/25/81/0/0/02/25810002_1_6.png?1664953316852",
+              "mainSceneAlt": "No.5のミルコさん_6"
+            }
+          ],
+          "workIcons": [],
+          "myListCount": 40406,
+          "favoriteCount": 96898,
+          "workTypeList": ["anime"],
+          "vodType": "svod",
+          "ageLimitType": "0",
+          "workIconInfoList": [
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "1",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0"
+          ]
+        },
+        "seriesInfo": null,
+        "rankingInfo": {
+          "rank": 7,
+          "arrowIcon": "rankDown"
+        }
+      },
+      {
+        "workId": "25965",
+        "workInfo": {
+          "workTitle": "冰剣の魔術師が世界を統べる",
+          "link": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=25965",
+          "mainKeyVisualPath": "https://cs1.animestore.docomo.ne.jp/anime_kv/img/25/96/5/25965_1_1.png?1669712406744",
+          "mainKeyVisualAlt": "冰剣の魔術師が世界を統べる_1",
+          "scenes": [
+            {
+              "link": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=25965&partId=25965001",
+              "mainScenePath": "https://cs1.animestore.docomo.ne.jp/anime_kv/img/25/96/5/0/01/25965001_1_6.png?1670907606892",
+              "mainSceneAlt": "「世界最強の魔術師である少年は、魔術学院に入学する」_6"
+            },
+            {
+              "link": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=25965&partId=25965002",
+              "mainScenePath": "https://cs1.animestore.docomo.ne.jp/anime_kv/img/25/96/5/0/02/25965002_1_6.png?1672129807790",
+              "mainSceneAlt": "「世界最強の魔術師である少年は、演習を開始する」_6"
+            }
+          ],
+          "workIcons": [],
+          "myListCount": 49284,
+          "favoriteCount": 101889,
+          "workTypeList": ["anime"],
+          "vodType": "svod",
+          "ageLimitType": "0",
+          "workIconInfoList": [
+            "1",
+            "1",
+            "0",
+            "0",
+            "0",
+            "1",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0"
+          ]
+        },
+        "seriesInfo": null,
+        "rankingInfo": {
+          "rank": 12,
+          "arrowIcon": "rankDown"
+        }
+      },
+      {
+        "workId": "26047",
+        "workInfo": {
+          "workTitle": "お兄ちゃんはおしまい！",
+          "link": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=26047",
+          "mainKeyVisualPath": "https://cs1.animestore.docomo.ne.jp/anime_kv/img/26/04/7/26047_1_1.png?1672021807617",
+          "mainKeyVisualAlt": "お兄ちゃんはおしまい！_1",
+          "scenes": [
+            {
+              "link": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=26047&partId=26047001",
+              "mainScenePath": "https://cs1.animestore.docomo.ne.jp/anime_kv/img/26/04/7/0/01/26047001_1_6.png?1672806607569",
+              "mainSceneAlt": "まひろとイケないカラダ_6"
+            },
+            {
+              "link": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=26047&partId=26047002",
+              "mainScenePath": "https://cs1.animestore.docomo.ne.jp/anime_kv/img/26/04/7/0/02/26047002_1_6.png?1673335807948",
+              "mainSceneAlt": "まひろと女の子の日_6"
+            }
+          ],
+          "workIcons": [],
+          "myListCount": 33571,
+          "favoriteCount": 80700,
+          "workTypeList": ["anime"],
+          "vodType": "svod",
+          "ageLimitType": "0",
+          "workIconInfoList": [
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "1",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0"
+          ]
+        },
+        "seriesInfo": null,
+        "userInfo": {
+          "memberFlags": ["viewed"]
+        },
+        "rankingInfo": {
+          "rank": 14,
+          "arrowIcon": "rankUp"
+        }
+      },
+      {
+        "workId": "26045",
+        "workInfo": {
+          "workTitle": "お隣の天使様にいつの間にか駄目人間にされていた件",
+          "link": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=26045",
+          "mainKeyVisualPath": "https://cs1.animestore.docomo.ne.jp/anime_kv/img/26/04/5/26045_1_1.png?1670566365799",
+          "mainKeyVisualAlt": "お隣の天使様にいつの間にか駄目人間にされていた件_1",
+          "scenes": [
+            {
+              "link": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=26045&partId=26045001",
+              "mainScenePath": "https://cs1.animestore.docomo.ne.jp/anime_kv/img/26/04/5/0/01/26045001_1_6.png?1672797654438",
+              "mainSceneAlt": "天使様との出会い_6"
+            },
+            {
+              "link": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=26045&partId=26045002",
+              "mainScenePath": "https://cs1.animestore.docomo.ne.jp/anime_kv/img/26/04/5/0/02/26045002_1_6.png?1673838079857",
+              "mainSceneAlt": "天使様と夕食_6"
+            }
+          ],
+          "workIcons": [],
+          "myListCount": 44186,
+          "favoriteCount": 111330,
+          "workTypeList": ["anime"],
+          "vodType": "svod",
+          "ageLimitType": "0",
+          "workIconInfoList": [
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "1",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0"
+          ]
+        },
+        "seriesInfo": null,
+        "userInfo": {
+          "memberFlags": ["viewed"]
+        },
+        "rankingInfo": {
+          "rank": 16,
+          "arrowIcon": "rankUp"
+        }
+      },
+      {
+        "workId": "26036",
+        "workInfo": {
+          "workTitle": "英雄王、武を極めるため転生す ～そして、世界最強の見習い騎士♀～",
+          "link": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=26036",
+          "mainKeyVisualPath": "https://cs1.animestore.docomo.ne.jp/anime_kv/img/26/03/6/26036_1_1.png?1677043807691",
+          "mainKeyVisualAlt": "英雄王、武を極めるため転生す ～そして、世界最強の見習い騎士♀～_1",
+          "scenes": [
+            {
+              "link": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=26036&partId=26036001",
+              "mainScenePath": "https://cs1.animestore.docomo.ne.jp/anime_kv/img/26/03/6/0/01/26036001_1_6.png?1672977676919",
+              "mainSceneAlt": "英雄王イングリス、転生す_6"
+            },
+            {
+              "link": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=26036&partId=26036002",
+              "mainScenePath": "https://cs1.animestore.docomo.ne.jp/anime_kv/img/26/03/6/0/02/26036002_1_6.png?1673838168934",
+              "mainSceneAlt": "天恵武姫の邂逅_6"
+            }
+          ],
+          "workIcons": [],
+          "myListCount": 55231,
+          "favoriteCount": 114105,
+          "workTypeList": ["anime"],
+          "vodType": "svod",
+          "ageLimitType": "0",
+          "workIconInfoList": [
+            "1",
+            "1",
+            "0",
+            "0",
+            "0",
+            "1",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "1",
+            "0",
+            "0",
+            "0",
+            "0"
+          ]
+        },
+        "seriesInfo": null,
+        "userInfo": {
+          "memberFlags": ["viewed"]
+        },
+        "rankingInfo": {
+          "rank": 18,
+          "arrowIcon": "rankDown"
+        }
+      }
+    ],
+    "lastModified": "1678071600",
+    "summaryDate": {
+      "from": "2023/3/5 03:00",
+      "to": "2023/3/6 02:59"
+    }
+  }
+}

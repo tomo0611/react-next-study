@@ -9,3 +9,8 @@ body {
   max-width: 100vw;
   overflow-x: hidden;
 }
+
+/* In your CSS */
+.avatar {
+  border-radius: 50%;
+}
