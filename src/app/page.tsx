@@ -26,23 +26,12 @@ export default async function Page() {
 
   return (
     <>
-      <div
-        style={{
-          marginTop: "20px",
-          marginLeft: "20px",
-          marginRight: "20px",
-        }}
-      >
-        <h1>デイリーアニメランキング: 最も人気のアニメ</h1>
+      <div className="mt-4 mx-4">
+        <h1 className="mt-2 text-3xl font-bold underline">
+          デイリーアニメランキング: 最も人気のアニメ
+        </h1>
 
-        <div
-          style={{
-            display: "grid",
-            gridTemplateColumns: "repeat(3, 1fr)",
-            gap: "10px",
-            gridAutoRows: "minmax(100px, auto)",
-          }}
-        >
+        <div className="mt-4 grid grid-rows-5 grid-cols-5 gap-3">
           {recommendableWorks.map((work: Work) => (
             <Card key={`list_${work.workId}`} work={work} />
           ))}

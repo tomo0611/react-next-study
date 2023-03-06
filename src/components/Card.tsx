@@ -13,9 +13,7 @@ export default function Card({ work }: { work: Work }) {
       onClick={() => {
         alert("You clicked : " + work.workInfo.workTitle + "!");
       }}
-      style={{
-        border: "1px solid #ccc",
-      }}
+      className="p-4 border-2 border-gray-200 rounded-lg"
     >
       <Image
         src={work.workInfo.mainKeyVisualPath}
