@@ -1,7 +1,9 @@
 "use client";
 
 import Image from "next/image";
+import { useContext } from "react";
 import { WorkWorkInfo } from "../../../types/generated";
+import { TestContext } from "./../../context/TestContext";
 
 export default function WorkItem({
   workId,
@@ -10,6 +12,8 @@ export default function WorkItem({
   workId: string;
   workInfo: WorkWorkInfo;
 }) {
+  const test = useContext(TestContext);
+
   return (
     <li>
       <Image
@@ -18,7 +22,9 @@ export default function WorkItem({
         width={640 / 2}
         height={360 / 2}
       />
-      <p>{workInfo.workTitle}</p>
+      <p>
+        {test}:{workInfo.workTitle}
+      </p>
     </li>
   );
 }
