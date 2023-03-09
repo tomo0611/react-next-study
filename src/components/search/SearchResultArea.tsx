@@ -7,6 +7,13 @@ import WorkItem from "../common/WorkItem";
 export default function SearchResultArea({ query }: { query: string }) {
   let [workList, setWorkList] = useState<Work[]>([]);
 
+  const [reverse, setReverse] = useState(false);
+
+  const displayedWorks = [...workList];
+  if (reverse) {
+    displayedWorks.reverse();
+  }
+
   useEffect(() => {
     fetch(`http://localhost:3000/api/danime/search?query=${query}`)
       .then((r) => r.json())
@@ -17,7 +24,7 @@ export default function SearchResultArea({ query }: { query: string }) {
       });
   }, [query]);
 
-  const recommendableWorks = workList.filter(
+  const recommendableWorks = displayedWorks.filter(
     (work) => work.workInfo.favoriteCount > 50000
   );
 
@@ -31,6 +38,17 @@ export default function SearchResultArea({ query }: { query: string }) {
 
   return (
     <>
+      <label>
+        <input
+          type="checkbox"
+          checked={reverse}
+          onChange={(e) => {
+            setReverse(e.target.checked);
+          }}
+        />{" "}
+        Show in reverse order
+      </label>
+
       {workList.length > 0 ? (
         <>
           <div>{`検索結果：${workList.length}作品`}</div>
