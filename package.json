@@ -16,8 +16,9 @@
     "eslint": "8.35.0",
     "eslint-config-next": "13.2.3",
     "next": "13.2.3",
-    "react": "^18.3.0-next-9fb2469a6-20230308",
-    "react-dom": "^18.3.0-next-9fb2469a6-20230308",
+    "node-html-parser": "^6.1.5",
+    "react": "18.2",
+    "react-dom": "18.2",
     "typescript": "4.9.5"
   },
   "devDependencies": {

@@ -82,6 +82,152 @@ export interface ApiDanimeSearchGet200ResponseData {
 /**
  * 
  * @export
+ * @interface CompactEpisode
+ */
+export interface CompactEpisode {
+    /**
+     * 
+     * @type {string}
+     * @memberof CompactEpisode
+     */
+    'partId'?: string;
+    /**
+     * 
+     * @type {string}
+     * @memberof CompactEpisode
+     */
+    'partDispNumber'?: string;
+    /**
+     * 
+     * @type {string}
+     * @memberof CompactEpisode
+     */
+    'partTitle'?: string;
+    /**
+     * 
+     * @type {string}
+     * @memberof CompactEpisode
+     */
+    'mainScenePath'?: string;
+    /**
+     * 
+     * @type {number}
+     * @memberof CompactEpisode
+     */
+    'mainSceneWidth'?: number;
+    /**
+     * 
+     * @type {number}
+     * @memberof CompactEpisode
+     */
+    'mainSceneHeight'?: number;
+    /**
+     * 
+     * @type {string}
+     * @memberof CompactEpisode
+     */
+    'mainSceneAlt'?: string;
+    /**
+     * 
+     * @type {number}
+     * @memberof CompactEpisode
+     */
+    'watchingProgress'?: number;
+}
+/**
+ * 
+ * @export
+ * @interface CompactWorkInfo
+ */
+export interface CompactWorkInfo {
+    /**
+     * 
+     * @type {string}
+     * @memberof CompactWorkInfo
+     */
+    'workId'?: string;
+    /**
+     * 
+     * @type {string}
+     * @memberof CompactWorkInfo
+     */
+    'img1'?: string;
+    /**
+     * 
+     * @type {number}
+     * @memberof CompactWorkInfo
+     */
+    'img1w'?: number;
+    /**
+     * 
+     * @type {number}
+     * @memberof CompactWorkInfo
+     */
+    'img1h'?: number;
+    /**
+     * 
+     * @type {string}
+     * @memberof CompactWorkInfo
+     */
+    'img2'?: string;
+    /**
+     * 
+     * @type {number}
+     * @memberof CompactWorkInfo
+     */
+    'img2w'?: number;
+    /**
+     * 
+     * @type {number}
+     * @memberof CompactWorkInfo
+     */
+    'img2h'?: number;
+    /**
+     * 
+     * @type {string}
+     * @memberof CompactWorkInfo
+     */
+    'img3'?: string;
+    /**
+     * 
+     * @type {number}
+     * @memberof CompactWorkInfo
+     */
+    'img3w'?: number;
+    /**
+     * 
+     * @type {number}
+     * @memberof CompactWorkInfo
+     */
+    'img3h'?: number;
+    /**
+     * 
+     * @type {string}
+     * @memberof CompactWorkInfo
+     */
+    'title'?: string;
+    /**
+     * 
+     * @type {string}
+     * @memberof CompactWorkInfo
+     */
+    'option_text'?: string;
+    /**
+     * 
+     * @type {string}
+     * @memberof CompactWorkInfo
+     */
+    'fav_count_text'?: string;
+    /**
+     * 
+     * @type {Array<CompactEpisode>}
+     * @memberof CompactWorkInfo
+     */
+    'episodes'?: Array<CompactEpisode>;
+}
+/**
+ * 
+ * @export
  * @interface Work
  */
 export interface Work {
@@ -93,75 +239,75 @@ export interface Work {
     'workId': string;
     /**
      * 
-     * @type {WorkWorkInfo}
+     * @type {WorkInfo}
      * @memberof Work
      */
-    'workInfo': WorkWorkInfo;
+    'workInfo': WorkInfo;
 }
 /**
  * 
  * @export
- * @interface WorkWorkInfo
+ * @interface WorkInfo
  */
-export interface WorkWorkInfo {
+export interface WorkInfo {
     /**
      * 
      * @type {string}
-     * @memberof WorkWorkInfo
+     * @memberof WorkInfo
      */
     'workTitle': string;
     /**
      * 
      * @type {string}
-     * @memberof WorkWorkInfo
+     * @memberof WorkInfo
      */
     'link': string;
     /**
      * 
      * @type {string}
-     * @memberof WorkWorkInfo
+     * @memberof WorkInfo
      */
     'mainKeyVisualPath': string;
     /**
      * 
      * @type {string}
-     * @memberof WorkWorkInfo
+     * @memberof WorkInfo
      */
     'mainKeyVisualAlt': string;
     /**
      * 
      * @type {Array<number>}
-     * @memberof WorkWorkInfo
+     * @memberof WorkInfo
      */
     'workIcons': Array<number>;
     /**
      * 
      * @type {number}
-     * @memberof WorkWorkInfo
+     * @memberof WorkInfo
      */
     'myListCount': number;
     /**
      * 
      * @type {number}
-     * @memberof WorkWorkInfo
+     * @memberof WorkInfo
      */
     'favoriteCount': number;
     /**
      * 
      * @type {Array<string>}
-     * @memberof WorkWorkInfo
+     * @memberof WorkInfo
      */
     'workTypeList': Array<string>;
     /**
      * 
      * @type {string}
-     * @memberof WorkWorkInfo
+     * @memberof WorkInfo
      */
     'vodType': string;
     /**
      * 
      * @type {string}
-     * @memberof WorkWorkInfo
+     * @memberof WorkInfo
      */
     'ageLimitType': string;
 }

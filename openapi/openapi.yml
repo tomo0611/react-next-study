@@ -76,49 +76,127 @@ components:
           type: string
           example: "22681"
         workInfo:
-          type: object
-          required:
-            - workTitle
-            - link
-            - mainKeyVisualPath
-            - mainKeyVisualAlt
-            - workIcons
-            - myListCount
-            - favoriteCount
-            - workTypeList
-            - vodType
-            - ageLimitType
-          properties:
-            workTitle:
-              type: string
-              example: "ぼくたちは勉強ができない"
-            link:
-              type: string
-              example: "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=22681"
-            mainKeyVisualPath:
-              type: string
-              example: "https://cs1.animestore.docomo.ne.jp/anime_kv/img/22/68/1/22681_1_1.png"
-            mainKeyVisualAlt:
-              type: string
-              example: "ぼくたちは勉強ができない_1"
-            workIcons:
-              type: array
-              items:
-                type: integer
-            myListCount:
-              type: integer
-              example: 49843
-            favoriteCount:
-              type: integer
-              example: 65765
-            workTypeList:
-              type: array
-              items:
-                type: string
-                example: "anime"
-            vodType:
-              type: string
-              example: "svod"
-            ageLimitType:
-              type: string
-              example: "0"
+          $ref: "#/components/schemas/WorkInfo"
+
+    WorkInfo:
+      type: object
+      required:
+        - workTitle
+        - link
+        - mainKeyVisualPath
+        - mainKeyVisualAlt
+        - workIcons
+        - myListCount
+        - favoriteCount
+        - workTypeList
+        - vodType
+        - ageLimitType
+      properties:
+        workTitle:
+          type: string
+          example: "ぼくたちは勉強ができない"
+        link:
+          type: string
+          example: "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=22681"
+        mainKeyVisualPath:
+          type: string
+          example: "https://cs1.animestore.docomo.ne.jp/anime_kv/img/22/68/1/22681_1_1.png"
+        mainKeyVisualAlt:
+          type: string
+          example: "ぼくたちは勉強ができない_1"
+        workIcons:
+          type: array
+          items:
+            type: integer
+        myListCount:
+          type: integer
+          example: 49843
+        favoriteCount:
+          type: integer
+          example: 65765
+        workTypeList:
+          type: array
+          items:
+            type: string
+            example: "anime"
+        vodType:
+          type: string
+          example: "svod"
+        ageLimitType:
+          type: string
+          example: "0"
+
+    CompactWorkInfo:
+      type: object
+      properties:
+        workId:
+          type: string
+          example: "22681"
+        img1:
+          type: string
+          example: "https://cs1.animestore.docomo.ne.jp/anime_kv/img/22/68/1/22681_1_1.png"
+        img1w:
+          type: integer
+          example: 640
+        img1h:
+          type: integer
+          example: 360
+        img2:
+          type: string
+          example: "https://cs1.animestore.docomo.ne.jp/anime_kv/img/22/68/1/22681_1_2.png"
+        img2w:
+          type: integer
+          example: 288
+        img2h:
+          type: integer
+          example: 162
+        img3:
+          type: string
+          example: "https://cs1.animestore.docomo.ne.jp/anime_kv/img/22/68/1/22681_1_3.png"
+        img3w:
+          type: integer
+          example: 288
+        img3h:
+          type: integer
+          example: 162
+        title:
+          type: string
+          example: "ぼくたちは勉強ができない"
+        option_text:
+          type: string
+          example: "1080p"
+        fav_count_text:
+          type: string
+          example: "気になる登録数：158244"
+        episodes:
+          type: array
+          items:
+            $ref: "#/components/schemas/CompactEpisode"
+
+    CompactEpisode:
+      type: object
+      properties:
+        partId:
+          type: string
+          example: "24273001"
+        partDispNumber:
+          type: string
+          example: "第1話"
+        partTitle:
+          type: string
+          example: "『魔女見習いイレイナ』"
+        mainScenePath:
+          type: string
+          example: "https://cs1.animestore.docomo.ne.jp/anime_kv/img/24/27/3/0/01/24273001_1_2.png"
+        mainSceneWidth:
+          type: integer
+          example: 288
+        mainSceneHeight:
+          type: integer
+          example: 162
+        mainSceneAlt:
+          type: string
+          example: "魔女の旅々_第1話_2"
+        watchingProgress:
+          type: number
+          example: 0
