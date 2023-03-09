@@ -1,0 +1,124 @@
+openapi: "3.0.3"
+
+info:
+  title: "DAnime API"
+  version: "1.0.0"
+
+paths:
+  "/api/danime/search":
+    get:
+      summary: "検索"
+      tags: ["danime"]
+      deprecated: false
+      parameters:
+        - name: id
+          in: query
+          required: true
+          schema:
+            type: string
+            example: "ぼくたちは"
+      responses:
+        "200":
+          description: "成功"
+          content:
+            application/json:
+              schema:
+                type: object
+                required:
+                  - resultCd
+                  - version
+                  - selflink
+                properties:
+                  resultCd:
+                    type: string
+                    example: "00"
+                  version:
+                    type: string
+                    example: "1.5"
+                  selflink:
+                    type: string
+                    example: "https://animestore.docomo.ne.jp/animestore/rest/WS000105?length=100&mainKeyVisualSize=1&searchKey=%E5%90%9B%E3%81%AE&vodTypeList=svod_tvod"
+                  data:
+                    type: object
+                    required:
+                      - maxCount
+                      - count
+                      - workList
+                    properties:
+                      maxCount:
+                        type: integer
+                        example: 21
+                      count:
+                        type: integer
+                        example: 21
+                      workList:
+                        type: array
+                        items:
+                          $ref: "#/components/schemas/Work"
+
+servers:
+  - url: "http://localhost:3000"
+    description: "ローカル環境"
+
+tags:
+  - name: "danime"
+    description: "dアニメストア関連のAPI"
+
+components:
+  schemas:
+    Work:
+      type: object
+      required:
+        - workId
+        - workInfo
+      properties:
+        workId:
+          type: string
+          example: "22681"
+        workInfo:
+          type: object
+          required:
+            - workTitle
+            - link
+            - mainKeyVisualPath
+            - mainKeyVisualAlt
+            - workIcons
+            - myListCount
+            - favoriteCount
+            - workTypeList
+            - vodType
+            - ageLimitType
+          properties:
+            workTitle:
+              type: string
+              example: "ぼくたちは勉強ができない"
+            link:
+              type: string
+              example: "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=22681"
+            mainKeyVisualPath:
+              type: string
+              example: "https://cs1.animestore.docomo.ne.jp/anime_kv/img/22/68/1/22681_1_1.png"
+            mainKeyVisualAlt:
+              type: string
+              example: "ぼくたちは勉強ができない_1"
+            workIcons:
+              type: array
+              items:
+                type: integer
+            myListCount:
+              type: integer
+              example: 49843
+            favoriteCount:
+              type: integer
+              example: 65765
+            workTypeList:
+              type: array
+              items:
+                type: string
+                example: "anime"
+            vodType:
+              type: string
+              example: "svod"
+            ageLimitType:
+              type: string
+              example: "0"

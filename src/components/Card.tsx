@@ -1,12 +1,18 @@
 "use client";
 
+import { useState } from "react";
 import { Work } from "@/models/Work";
 import Image from "next/image";
 
 export default function Card({ work }: { work: Work }) {
   function handleClick(work: Work) {
-    alert("You liked : " + work.workInfo.workTitle + "!");
+    // alert("You liked : " + work.workInfo.workTitle + "!");
+    setFavoriteCount(favoriteCount + 1);
   }
+
+  const [favoriteCount, setFavoriteCount] = useState(
+    work.workInfo.favoriteCount
+  );
 
   return (
     <div
@@ -31,7 +37,7 @@ export default function Card({ work }: { work: Work }) {
           handleClick(work);
         }}
       >
-        {work.workInfo.favoriteCount}
+        {favoriteCount}
       </button>
     </div>
   );
