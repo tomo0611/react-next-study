@@ -9,7 +9,7 @@ export async function GET(request: Request) {
   }
 
   const res = await fetch(
-    "https://animestore.docomo.ne.jp/animestore/rest/WS000105?length=100&mainKeyVisualSize=1&searchKey=" +
+    "https://animestore.docomo.ne.jp/animestore/rest/WS000105?length=100&mainKeyVisualSize=10&searchKey=" +
       encodeURIComponent(query) +
       "&vodTypeList=svod_tvod",
     { cache: "no-store" }
